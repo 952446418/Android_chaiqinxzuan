@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="用户数据库"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"/>
+
+<!--    <EditText-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="（编号，名字，电话，备注，交易额）"-->
+<!--        android:textSize="16sp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="编号"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@drawable/bg_low_black"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="名字"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@drawable/bg_low_black"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="电话"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@drawable/bg_low_black"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="备注"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@drawable/bg_low_black"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="交易额"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@drawable/bg_low_black"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_medicine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        tools:context=".MainActivity" >-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>
+</ScrollView>

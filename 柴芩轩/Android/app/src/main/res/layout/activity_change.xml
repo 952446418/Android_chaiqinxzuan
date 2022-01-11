@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ChangeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/bg_low">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="添加饮片数据"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/et_medicinename"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="输入饮片名称"
+                android:layout_gravity="center"
+                android:padding="5sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@drawable/bg_username" />
+
+            <EditText
+                android:id="@+id/et_totalnumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:digits="0123456789."
+                android:hint="输入饮片库存"
+                android:layout_marginTop="10dp"
+                android:padding="5sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@drawable/bg_username" />
+
+            <EditText
+                android:id="@+id/et_value"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:digits="0123456789."
+                android:hint="输入饮片价格"
+                android:layout_marginTop="10dp"
+                android:padding="5sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@drawable/bg_username" />
+
+            <EditText
+                android:id="@+id/et_min"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:digits="0123456789."
+                android:hint="输入最低库存"
+                android:layout_marginTop="10dp"
+                android:padding="5sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@drawable/bg_username" />
+
+
+            <Button
+                android:id="@+id/btn_addmedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添      加"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_username" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="删除饮片数据"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/et_delmedicine"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:hint="输入删除饮片名"
+                android:layout_marginTop="10dp"
+                android:padding="5sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@drawable/bg_username" />
+
+
+            <Button
+                android:id="@+id/btn_delmedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删      除"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_username" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="删除用户数据"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/et_delcustomer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:hint="输入删除消费者名字"
+                android:layout_marginTop="10dp"
+                android:padding="5sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@drawable/bg_username" />
+
+
+            <Button
+                android:id="@+id/btn_delcustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删      除"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_username" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
